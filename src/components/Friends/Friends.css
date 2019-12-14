@@ -1,0 +1,18 @@
+.friends-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: var(--freinds-height);
+  width: var(--freinds-width);
+  border-top: 1px solid #0000002d;
+  font-size: var(--content-text-size);
+  font-family: var(--main-font);
+  font-weight: var(--regular-text-weight);
+}
+
+.friends-title {
+  font-size: var(--large-text-size);
+  font-weight: var(--bold-text-weight);
+  margin-bottom: 10px;
+}

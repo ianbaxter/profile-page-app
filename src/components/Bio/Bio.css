@@ -1,0 +1,58 @@
+.bio-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: var(--bio-height);
+  width: var(--bio-width);
+  background-color: var(--bio-background-color);
+  margin: var(--bio-margin);
+  border-radius: 45px;
+  padding: 5%;
+  font-size: var(--content-text-size);
+  font-family: var(--main-font);
+  font-weight: var(--regular-text-weight);
+  box-shadow: 0 2px 24px 0 #dddddd;
+}
+
+.bio-stats-container {
+  width: 34%;
+  overflow: hidden;
+}
+
+.stat-container {
+  margin-bottom: 40px;
+}
+
+.stat-label {
+  color: var(--bio-text-secondary-color);
+  margin-bottom: 10px;
+  font-weight: var(--bold-text-weight);
+}
+
+.stat-container input::placeholder {
+  color: var(--bio-text-primary-color);
+}
+
+.stat-value {
+  background: transparent;
+  width: 100px;
+  border: 0;
+}
+
+#fav-color-circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 12.5px;
+}
+
+.bio-about-container {
+  width: 66%;
+  margin-left: 1%;
+  padding-left: 4%;
+  border-left: 1px solid #0000002d;
+}
+
+#bio-about-title {
+  font-weight: var(--bold-text-weight);
+  margin-bottom: 10px;
+}

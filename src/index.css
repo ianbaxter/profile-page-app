@@ -1,13 +1,49 @@
-body {
+/* app css reset */
+body,
+div,
+p {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* app-variables */
+:root {
+  /* background colors */
+  --profile-background-color: #f2f2f2;
+  --header-background-color: #8dc63f;
+  --bio-background-color: #ffffff;
+
+  /* font */
+  --main-font: Roboto, sans-serif;
+
+  /* font colors */
+  --header-text-primary-color: #ffffff;
+  --header-text-secondary-color: #ffffffdc;
+  --bio-text-primary-color: #000000;
+  --bio-text-secondary-color: #00000075;
+
+  /* font sizes */
+  --large-text-size: 1.13em;
+  --content-text-size: 0.9em;
+
+  /* font weights */
+  --regular-text-weight: 400;
+  --bold-text-weight: 700;
+
+  /* profile dimensions */
+  --profile-height: 100%;
+  --profile-width: 100%;
+
+  /* header dimensions */
+  --header-height: 34%;
+  --header-width: 100%;
+
+  /* bio dimensions */
+  --bio-height: 36%;
+  --bio-width: 74%;
+  --bio-margin: 8%;
+
+  /* friends dimensions */
+  --freinds-height: 14%;
+  --friends-width: 100%;
 }

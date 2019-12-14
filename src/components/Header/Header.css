@@ -1,0 +1,59 @@
+.header-container {
+  background: var(--header-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: var(--header-height);
+  width: var(--header-width);
+  font-family: var(--main-font);
+}
+
+.header-picture-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+#header-picture {
+  height: 50%;
+  border-radius: 45px;
+  box-shadow: 0 3px 18px 0 #868686;
+}
+
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 50%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.header-text-container input::placeholder {
+  color: var(--header-text-primary-color);
+}
+
+.name-value {
+  background: transparent;
+  font-size: var(--large-text-size);
+  font-weight: var(--bold-text-weight);
+  width: 160px;
+  border: 0;
+  color: var(--header-text-primary-color);
+}
+
+.login-time-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: var(--content-text-size);
+  font-weight: var(--regular-text-weight);
+  color: var(--header-text-secondary-color);
+}
+
+.login-history-value {
+  margin-top: 5px;
+}
