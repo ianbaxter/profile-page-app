@@ -10,13 +10,15 @@ const Bio = ({
   setDateOfBirth,
   setFavActivity
 }) => {
+  // Style variable to set color of circle to current favColor state value
   let favColorCircleStyle = { background: favColor };
 
   const handleTextEdit = event => {
     switch (event.target.name) {
       case "date-of-birth":
         if (event.target.value === "") {
-          setDateOfBirth("...");
+          // no user text input, set field to default value
+          setDateOfBirth("dd/mm/yyyy");
           break;
         }
         console.log("Setting firstName to " + event.target.value);
@@ -24,7 +26,8 @@ const Bio = ({
         break;
       case "favourite-activity":
         if (event.target.value === "") {
-          setFavActivity("Camping");
+          // no user text input, set field to default value
+          setFavActivity("e.g. Camping");
           break;
         }
         console.log("Setting lastName to " + event.target.value);

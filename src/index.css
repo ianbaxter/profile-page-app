@@ -17,9 +17,8 @@ p {
 
   /* font colors */
   --header-text-primary-color: #ffffff;
-  --header-text-secondary-color: #ffffffdc;
   --bio-text-primary-color: #000000;
-  --bio-text-secondary-color: #00000080;
+  --bio-text-secondary-color: #000000b2;
 
   /* font sizes */
   --large-text-size: 1.13em;

@@ -10,12 +10,14 @@ const Header = ({
   setFirstName,
   setLastName
 }) => {
+  // Style variable to set color of Header to current favColor state value
   let favColorStyle = { background: favColor };
 
   const handleTextEdit = event => {
     switch (event.target.name) {
       case "first-name":
         if (event.target.value === "") {
+          // no user text input, set field to default value
           setFirstName("First Name");
           break;
         }
@@ -24,6 +26,7 @@ const Header = ({
         break;
       case "last-name":
         if (event.target.value === "") {
+          // no user text input, set field to default value
           setLastName("Last Name");
           break;
         }
@@ -41,7 +44,7 @@ const Header = ({
         <img
           id="header-picture"
           src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-          alt="Profile"
+          alt="My Profile"
         />
       </div>
       <div className="header-text-container">

@@ -11,8 +11,6 @@
 
 .bio-card-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   height: 70%;
   width: 72%;
   background-color: var(--bio-background-color);
@@ -27,24 +25,22 @@
 .bio-stats-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 34%;
   justify-content: space-between;
+  width: 34%;
   margin: 0;
   overflow: hidden;
-}
-
-.stat-label {
-  color: var(--bio-text-secondary-color);
-  margin-bottom: 10px;
-  font-weight: var(--bold-text-weight);
 }
 
 .stat-container {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin-bottom: 0;
+}
+
+.stat-label {
+  color: var(--bio-text-secondary-color);
+  font-weight: var(--bold-text-weight);
+  margin-bottom: 10px;
 }
 
 .stat-container input::placeholder {
@@ -77,7 +73,6 @@
 .bio-about-container {
   width: 66%;
   padding-left: 4%;
-  max-height: 100%;
   overflow: hidden;
 }
 
@@ -96,6 +91,10 @@
     height: 65%;
     width: 50%;
     margin-left: 10%;
+  }
+
+  .bio-stats-container {
+    justify-content: flex-start;
   }
 
   .stat-container {
