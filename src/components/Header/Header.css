@@ -1,5 +1,4 @@
 .header-container {
-  background: var(--header-background-color);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -40,7 +39,6 @@
   background: transparent;
   font-size: var(--large-text-size);
   font-weight: var(--bold-text-weight);
-  width: 160px;
   border: 0;
   color: var(--header-text-primary-color);
 }

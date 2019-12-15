@@ -12,6 +12,7 @@ describe("Bio", () => {
           dateOfBirth={""}
           favActivity={""}
           favColor={""}
+          updateFavColor={jest.fn()}
         </Bio>
       ))
   );

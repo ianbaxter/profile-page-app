@@ -10,7 +10,6 @@ p {
 :root {
   /* background colors */
   --profile-background-color: #f2f2f2;
-  --header-background-color: #8dc63f;
   --bio-background-color: #ffffff;
 
   /* font */
@@ -35,15 +34,14 @@ p {
   --profile-width: 100%;
 
   /* header dimensions */
-  --header-height: 34%;
+  --header-height: 32%;
   --header-width: 100%;
 
   /* bio dimensions */
-  --bio-height: 36%;
+  --bio-height: 51%;
   --bio-width: 74%;
-  --bio-margin: 8%;
 
   /* friends dimensions */
-  --freinds-height: 14%;
+  --freinds-height: 16%;
   --friends-width: 100%;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import Profile from "./Profile";
 import Header from "../Header/Header";
 import Bio from "../Bio/Bio";
@@ -25,4 +25,21 @@ describe("Profile", () => {
   //       )
   //     ).toEqual(true);
   //   });
+});
+
+describe("mounted Profile", () => {
+  let wrapper;
+
+  beforeEach(() => mount(<Profile />));
+
+  it("calls updateFavColor when current favourite color is clicked", () => {
+    const spy = jest.spyOn(wrapper.instance(), "updateFavColor");
+    wrapper.instance.forceUpdate();
+    expect(spy).toHaveBeenCalledTimes(0);
+    wrapper
+      .find("#fav-color-circle")
+      .first()
+      .similate("click");
+    expect(spy).toHaveBeenCalledTimes(1);
+  });
 });
