@@ -10,13 +10,17 @@ describe("Profile", () => {
 
   beforeEach(() => (wrapper = shallow(<Profile />)));
 
-  it("should render a <div />", () => {
-    expect(wrapper.find("div").length).toEqual(1);
+  it("should render multiple <div />", () => {
+    expect(wrapper.find("div").length).toEqual(2);
   });
 
   it("should render the Header, Bio and Friends component", () => {
     expect(
-      wrapper.containsAllMatchingElements([<Header />, <Bio />, <Friends />])
+      wrapper.containsAllMatchingElements([
+        <Header key="1" />,
+        <Bio key="2" />,
+        <Friends key="3" />
+      ])
     ).toEqual(true);
   });
 });

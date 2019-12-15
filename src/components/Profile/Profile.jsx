@@ -7,8 +7,8 @@ import Friends from "../Friends/Friends";
 const Profile = () => {
   const [firstName, setFirstName] = useState("First Name");
   const [lastName, setLastName] = useState("Last Name");
-  const [dateOfBirth, setDateOfBirth] = useState("21/08/1994");
-  const [favActivity, setFavActivity] = useState("Camping");
+  const [dateOfBirth, setDateOfBirth] = useState("dd/mm/yyyy");
+  const [favActivity, setFavActivity] = useState("e.g. Camping");
   const [favColor, setFavColor] = useState("#8dc63f");
   const [friendsList, setFriendsList] = useState([]);
   const [loginHistory, setLoginHistory] = useState([]);
@@ -49,15 +49,17 @@ const Profile = () => {
         setFirstName={setFirstName}
         setLastName={setLastName}
       />
-      <Bio
-        dateOfBirth={dateOfBirth}
-        favActivity={favActivity}
-        favColor={favColor}
-        updateFavColor={updateFavColor}
-        setDateOfBirth={setDateOfBirth}
-        setFavActivity={setFavActivity}
-      />
-      <Friends friendsList={friendsList} />
+      <div className="body-container">
+        <Bio
+          dateOfBirth={dateOfBirth}
+          favActivity={favActivity}
+          favColor={favColor}
+          updateFavColor={updateFavColor}
+          setDateOfBirth={setDateOfBirth}
+          setFavActivity={setFavActivity}
+        />
+        <Friends friendsList={friendsList} />
+      </div>
     </div>
   );
 };

@@ -17,8 +17,10 @@ const Friends = ({ friendsList }) => {
 
   return (
     <div className="friends-container">
-      <p id="friends-title">Friends</p>
-      <div className="friends-list-container">{friendsProfileList}</div>
+      <div className="friends-content-container">
+        <p id="friends-title">Friends</p>
+        <div className="friends-list-container">{friendsProfileList}</div>
+      </div>
     </div>
   );
 };

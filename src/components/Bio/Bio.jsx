@@ -51,11 +51,7 @@ const Bio = ({
             ></input>
           </div>
           <div className="stat-container">
-            <p className="stat-label">
-              Favourite
-              <br />
-              Activity:
-            </p>
+            <p className="stat-label">Favourite Activity:</p>
             <input
               type="text"
               name="favourite-activity"
@@ -65,11 +61,7 @@ const Bio = ({
             ></input>
           </div>
           <div className="stat-container">
-            <p className="stat-label">
-              Favourite
-              <br />
-              Colour:
-            </p>
+            <p className="stat-label">Favourite Colour:</p>
             <div
               style={favColorCircleStyle}
               id="fav-color-circle"

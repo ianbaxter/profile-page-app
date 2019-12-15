@@ -3,3 +3,10 @@
   height: var(--profile-height);
   width: var(--profile-width);
 }
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  height: var(--body-height);
+  width: var(--body-width);
+}

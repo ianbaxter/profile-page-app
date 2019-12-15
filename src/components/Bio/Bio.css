@@ -14,7 +14,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   height: 70%;
-  width: 100%;
+  width: 72%;
   background-color: var(--bio-background-color);
   padding: 20px;
   border-radius: 45px;
@@ -40,14 +40,22 @@
   font-weight: var(--bold-text-weight);
 }
 
+.stat-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 0;
+}
+
 .stat-container input::placeholder {
   color: var(--bio-text-primary-color);
 }
 
 .stat-value {
   background: transparent;
-  width: 100px;
   border: 0;
+  font-size: var(--content-text-size);
+  font-weight: var(--regular-text-weight);
 }
 
 #fav-color-circle {
@@ -76,4 +84,27 @@
 #bio-about-title {
   font-weight: var(--bold-text-weight);
   margin-bottom: 10px;
+}
+
+/* media query for tablets and larger devices */
+@media screen and (min-width: 768px) {
+  .bio-container {
+    align-items: flex-start;
+  }
+
+  .bio-card-container {
+    height: 65%;
+    width: 50%;
+    margin-left: 10%;
+  }
+
+  .stat-container {
+    margin-bottom: 30px;
+  }
+
+  #fav-color-circle {
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
+  }
 }

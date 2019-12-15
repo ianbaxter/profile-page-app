@@ -55,3 +55,20 @@
 .login-history-value {
   margin-top: 5px;
 }
+
+/* media query for tablets and larger devices */
+@media screen and (min-width: 768px) {
+  .header-picture-container {
+    justify-content: flex-start;
+    width: auto;
+    margin: 0 10% 0 10%;
+  }
+
+  #header-picture {
+    height: 60%;
+  }
+
+  .header-text-container {
+    height: 60%;
+  }
+}

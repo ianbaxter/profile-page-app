@@ -19,7 +19,7 @@ p {
   --header-text-primary-color: #ffffff;
   --header-text-secondary-color: #ffffffdc;
   --bio-text-primary-color: #000000;
-  --bio-text-secondary-color: #00000075;
+  --bio-text-secondary-color: #00000080;
 
   /* font sizes */
   --large-text-size: 1.13em;
@@ -33,15 +33,34 @@ p {
   --profile-height: 100%;
   --profile-width: 100%;
 
+  /* body dimensions */
+  --body-height: 68%;
+  --body-width: 100%;
+
   /* header dimensions */
   --header-height: 32%;
   --header-width: 100%;
 
   /* bio dimensions */
-  --bio-height: 51%;
-  --bio-width: 74%;
+  --bio-height: 75%;
+  --bio-width: 100%;
 
   /* friends dimensions */
-  --freinds-height: 16%;
+  --freinds-height: 25%;
   --friends-width: 100%;
+}
+
+/* media query for tablets and larger devices */
+@media screen and (min-width: 768px) {
+  :root {
+    /* font sizes */
+    --large-text-size: 1.2em;
+    --content-text-size: 1em;
+
+    /* bio dimensions */
+    --bio-height: 70%;
+
+    /* friends dimensions */
+    --freinds-height: 30%;
+  }
 }

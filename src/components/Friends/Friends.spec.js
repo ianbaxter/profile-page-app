@@ -8,7 +8,7 @@ describe("Friends", () => {
   beforeEach(() => (wrapper = shallow(<Friends friendsList={[]} />)));
 
   it("should render multiple <div />", () => {
-    expect(wrapper.find("div").length).toEqual(2);
+    expect(wrapper.find("div").length).toEqual(3);
   });
 
   it("should render the friendsList array", () => {

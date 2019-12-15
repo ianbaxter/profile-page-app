@@ -1,4 +1,4 @@
-#Profile Page
+# Profile Page
 
 A social media style profile template made with React.
 
