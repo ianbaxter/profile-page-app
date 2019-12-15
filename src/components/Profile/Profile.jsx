@@ -16,7 +16,7 @@ const Profile = () => {
   // Load loginHistory and friendsList on component mount
   useEffect(() => {
     setLoginHistory([new Date().toLocaleString()]);
-    setFriendsList(["Amy ", "Saul ", "Tom", "Jo"]);
+    setFriendsList(["Amy", "Saul", "Tom", "Jo"]);
   }, []);
 
   function updateFavColor() {

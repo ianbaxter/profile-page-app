@@ -97,9 +97,9 @@ const Bio = ({
 };
 
 Bio.propTypes = {
-  dateOfBirth: PropTypes.string.isRequired,
-  favActivity: PropTypes.string.isRequired,
-  favColor: PropTypes.string.isRequired
+  dateOfBirth: PropTypes.string,
+  favActivity: PropTypes.string,
+  favColor: PropTypes.string
 };
 
 export default Bio;

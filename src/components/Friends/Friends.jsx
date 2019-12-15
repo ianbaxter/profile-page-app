@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import "./Friends.css";
 
 const Friends = ({ friendsList }) => {
-  const friendsList2 = friendsList.map(friend => (
+  // Create a list of friend's profiles with avatar and name from friendsList
+  const friendsProfileList = friendsList.map(friend => (
     <div key={friend} className="friend-container">
       <img
         className="friend-picture"
@@ -17,11 +18,11 @@ const Friends = ({ friendsList }) => {
   return (
     <div className="friends-container">
       <p id="friends-title">Friends</p>
-      <div className="friends-list-container">{friendsList2}</div>
+      <div className="friends-list-container">{friendsProfileList}</div>
     </div>
   );
 };
 
-Friends.propTypes = { friendsList: PropTypes.array.isRequired };
+Friends.propTypes = { friendsList: PropTypes.array };
 
 export default Friends;

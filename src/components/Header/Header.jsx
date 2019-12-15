@@ -69,9 +69,9 @@ const Header = ({
 };
 
 Header.propTypes = {
-  firstName: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired,
-  loginHistory: PropTypes.array.isRequired
+  firstName: PropTypes.string,
+  lastName: PropTypes.string,
+  loginHistory: PropTypes.array
 };
 
 export default Header;
