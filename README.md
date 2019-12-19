@@ -1,5 +1,7 @@
 # Profile Page
 
+<img src="images/profile-page-app-screenshot.png" height="731" >
+
 A social media style profile template made with React.
 
 Input details such as:
