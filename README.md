@@ -36,3 +36,14 @@ npm start
 ```
 
 Go to http://localhost:3000/ to view the application.
+
+## Tests
+
+To launch the test runner in the interactive watch mode:
+```
+npm test
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
