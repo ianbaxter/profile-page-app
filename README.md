@@ -11,6 +11,8 @@ Input details such as:
 - favourite activity
 - favourite colour
 
+Select the current favourite colour to get a random new colour from https://github.com/noops-challenge/hexbot
+
 ## Setup
 
 Clone the project:
